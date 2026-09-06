@@ -17,3 +17,6 @@
 - result → accumulates the powers needed when pow is odd (which is 1 [base power for collection] and any other odd power that comes before )
 - Each step halves the exponent → O(log y) instead of O(y)
 - Often combined with % MOD to prevent huge intermediate values
+
+## Fact about prime number
+- A square of prime number will always have exactly 3 factors
