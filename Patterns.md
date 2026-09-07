@@ -21,7 +21,7 @@
 ## Fact about prime number
 - A square of prime number will always have exactly 3 factors
 
-### Distinct subsequences — counting instead of generating
+## Distinct subsequences — counting instead of generating
 - Recursive generation: extend every previously generated subsequence with the current character.
 - If only the count is needed, we may be able to count these extensions instead of constructing them.
 - Repeated characters can create duplicate resulting subsequences.
