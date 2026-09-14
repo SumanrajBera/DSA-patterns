@@ -26,3 +26,15 @@
 - If only the count is needed, we may be able to count these extensions instead of constructing them.
 - Repeated characters can create duplicate resulting subsequences.
 - For distinct subsequences, track/count results by their ending character to handle those duplicates.
+
+## Rectangle Overlap
+Core property:
+- Treat each rectangle as an X range and a Y range.
+- Rectangles overlap iff their X ranges overlap AND their Y ranges overlap and they have parallel edges to X and Y axis.
+- Use strict `<` / `>` because touching edges does not count as overlap and if edges touching counts then use `>=` / `<=`.
+
+X overlap:
+`x1_max > x2_min && x1_min < x2_max`
+
+Y overlap:
+`y1_max > y2_min && y1_min < y2_max`
