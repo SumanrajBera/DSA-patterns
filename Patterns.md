@@ -42,3 +42,7 @@ Y overlap:
 ## Prime Factorization
 - Every integer n > 1 can be expressed as a product of prime factors.
 - If I repeatedly remove all allowed prime factors and something > 1 remains, that remainder contains another prime factor.
+
+## Prefix Sum
+- `Find sum of any range` A → B.
+- This can let me treat a range as something to remove from / keep from the total.
