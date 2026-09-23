@@ -38,3 +38,7 @@ X overlap:
 
 Y overlap:
 `y1_max > y2_min && y1_min < y2_max`
+
+## Prime Factorization
+- Every integer n > 1 can be expressed as a product of prime factors.
+- If I repeatedly remove all allowed prime factors and something > 1 remains, that remainder contains another prime factor.
