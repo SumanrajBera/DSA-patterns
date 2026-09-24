@@ -46,3 +46,9 @@ Y overlap:
 ## Prefix Sum
 - `Find sum of any range` A → B.
 - This can let me treat a range as something to remove from / keep from the total.
+
+## Modulo Pattern (Generated numbers based on previous state)
+- When a process repeatedly generates values and we only care about their remainder % k, there are only k possible states (0 ... k-1).
+- Track the remainder instead of the actual value, especially when the generated value can become huge.
+- If a remainder repeats and the next state depends only on the current remainder, the process is cycling.
+- Therefore, after checking k states, we know whether the target remainder (usually 0) can ever be reached.
