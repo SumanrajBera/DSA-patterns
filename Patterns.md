@@ -52,3 +52,12 @@ Y overlap:
 - Track the remainder instead of the actual value, especially when the generated value can become huge.
 - If a remainder repeats and the next state depends only on the current remainder, the process is cycling.
 - Therefore, after checking k states, we know whether the target remainder (usually 0) can ever be reached.
+
+## Regex — Lookaround
+- (?=...) → positive lookahead → finds position before a pattern.
+- (?<=...) → positive lookbehind → finds position after a pattern.
+
+They check the surrounding characters without consuming them due to capturing `()`
+
+**Example**:
+/(?=\()|(?<=\))/ → split at positions before ( or after ).
