@@ -61,3 +61,26 @@ They check the surrounding characters without consuming them due to capturing `(
 
 **Example**:
 /(?=\()|(?<=\))/ → split at positions before ( or after ).
+
+## Recursion
+- `Subproblem Recursion`: If someone gives me the answer for the smaller/remaining part, I know how to get the answer for the whole problem
+```js
+function solve(input) {
+    // 1. Base case
+    if (input is small enough) {
+        return baseAnswer;
+    }
+
+    // 2. Take/cut one part
+    let current = ...;
+
+    // 3. Create the remaining smaller problem
+    let remaining = ...;
+
+    // 4. Solve the smaller problem
+    let result = solve(remaining);
+
+    // 5. Combine current part with recursive answer
+    return combine(current, result);
+}
+``` 
