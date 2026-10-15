@@ -83,4 +83,10 @@ function solve(input) {
     // 5. Combine current part with recursive answer
     return combine(current, result);
 }
-``` 
+```
+
+## DSA — Reuse Previous Information
+- **Reuse previous results** → Use what we already calculated instead of starting from scratch.
+- **Find what changes** → Check which values are affected by the new input.
+- **Calculate the difference** → Find how much a value changes instead of calculating it again.
+- **Key question** → Can I use the previous result to calculate the next one?
