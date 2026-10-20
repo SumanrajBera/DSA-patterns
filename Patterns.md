@@ -90,3 +90,12 @@ function solve(input) {
 - **Find what changes** → Check which values are affected by the new input.
 - **Calculate the difference** → Find how much a value changes instead of calculating it again.
 - **Key question** → Can I use the previous result to calculate the next one?
+
+## Backtracking: Take / Don't Take
+- **Choices:** Take or don't take the current element.
+- **Base case:** All elements processed → save the current result.
+- **Branching:** Explore each choice recursively.
+- **State management:** Copy the current state or make a choice, recurse, then undo it (`pop()`).
+- **Complexity:** Depends on the number of choices, recursion depth, and work done at each step.
+
+**Key idea:** Make a choice → explore → undo the choice when necessary → explore the next choice.
