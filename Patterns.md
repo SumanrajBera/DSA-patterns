@@ -99,3 +99,24 @@ function solve(input) {
 - **Complexity:** Depends on the number of choices, recursion depth, and work done at each step.
 
 **Key idea:** Make a choice → explore → undo the choice when necessary → explore the next choice.
+
+## Bitwise AND — Property
+
+If
+
+```python
+a & b == k
+b & c == k
+```
+
+Then
+
+```python
+a & b & c == k
+```
+
+**Why?** Every set bit in `k` must be set in all operands. AND preserves only the bits common to every operand.
+
+**Generalization:** If every consecutive pair in a chain has AND equal to the same `k`, the AND of the entire chain is also `k`.
+
+**Condition:** All pairwise AND results must equal the same `k`.
